@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple RPG Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Welcome to the RPG Game</h1>
+        
+        <div id="player-name">
+            <label for="player-name-input">Enter your name: </label>
+            <input type="text" id="player-name-input">
+            <button id="start-game">Start Game</button>
+        </div>
+
+        
+        <div id="weapon-selection" class="hidden">
+            <h2>Select your weapon</h2>
+            <select id="weapon-choice">
+                <!-- Weapon choices will be populated here -->
+            </select>
+            <button id="select-weapon">Select Weapon</button>
+        </div>
+
+        <div id="inventory" class="hidden">
+            <h2>Your Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </div>
+
+        <div id="monster-encounter" class="hidden">
+            <h2>Monster Encounter</h2>
+            <p id="monster-description"></p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
